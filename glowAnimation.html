@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smoky Animation Text</title>
+<style>
+@keyframes smoky {
+  0% {
+    color: transparent;
+    text-shadow: none;
+  }
+  50% {
+    color: white;
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #00ffcc, 0 0 60px #00ffcc, 0 0 70px #00ffcc, 0 0 80px #00ffcc;
+  }
+  100% {
+    color: transparent;
+    text-shadow: none;
+  }
+}
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.text {
+  font-size: 48px;
+  font-family: Arial, sans-serif;
+  animation: smoky 3s infinite;
+}
+</style>
+</head>
+<body>
+<h1 class="text">Hello there!</h1>
+</body>
+</html>
